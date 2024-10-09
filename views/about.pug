@@ -1,0 +1,15 @@
+extend layout
+block content
+    h1() Contact
+       form(action="/about", method="post")
+            label(for="name") name
+            input(type="text", name="name" id="name")
+            label(for="phone") phone
+            input(type="text" name="phone" id="phone")
+            lable(for="email") email
+            input(type="text" name="email" id="email")
+            label(for="message") message
+            input(type="text"  name="message" id="message") 
+            button(type="submit") Send  Message
+
+    

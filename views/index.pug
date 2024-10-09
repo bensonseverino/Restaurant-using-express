@@ -1,0 +1,41 @@
+extend layout
+block content
+    section( class="font-roboto")
+        main()
+            div(class=" grid grid-cols-2 items-center w-full")
+                div(class=" flex flex-col gap-4")
+                    h1(class="font-pacifico font-normal text-center text-yellow-600 text-3xl  ") All healthy food is <br> available at Zomato
+                    div(class="flex justify-center items-center   ")
+                        img(src="/images/profile.jpg", alt="profile" class=" size-16   rounded-full object-fill m-4")
+                        p(class="text-slate-400 text-sm") We are just a click away when you <br> come for delicious food
+                    div(class="flex gap-4 justify-center")
+                        button(class="px-5 py-2 bg-yellow-600") Buy Now 
+                        button(class="px-5 py-2 border border-black") How to order
+                img(src="/images/banner2.png", alt="banner" class="object-contain w-full ")
+        div()
+            h2(class="text-4xl font-gloria text-center mt-4 underline") Shop our delicious meals
+        ul(class="grid grid-cols-2 items-center px-4 py-4 gap-4 mt-4")
+            each val in data 
+                li(class="flex flex-col")
+                    div(class="grid text-center text-black")
+                        img(src=val.image ,alt=val.title, class="h-90 w-90 rounded-2xl  object-cover items-center w-full")
+                        p(class="px-2 text-black font-gloria font-bold mt-2 text-wrap text-center mb-2")=val.title 
+                        button(class="px-5 py-2 bg-yellow-600 rounded-2xl font-semibold") ORDER NOW
+        p(class="px-5  text-center  py-2 mt-6 border border-yellow-600 bg-transparent rounded-2xl font-semibold") SHOP MORE FOOD
+        h3(class="text-4xl font-gloria text-center mt-4 underline") Shop Drinks
+        ul(class="grid grid-cols-2 items-center px-4 py-4 gap-4 mt-4")
+            each val in drinks  
+                li(class="flex flex-col") 
+                    div(class="grid text-center text-black")
+                        img(src=val.strDrinkThumb , class="h-90 w-90 rounded-2xl  object-cover items-center w-full")
+                        p(class="px-2 text-black font-gloria font-bold mt-2 text-wrap text-center mb-2")=val.strDrink 
+                        button(class="px-5 py-2 bg-yellow-600 rounded-2xl font-semibold") ORDER NOW 
+        p(class="px-5  text-center  py-2 mt-6 border border-yellow-600 bg-transparent rounded-2xl font-semibold") SHOP MORE DRINKS   
+                        
+            
+                    
+                            
+
+                          
+
+    

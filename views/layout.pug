@@ -1,0 +1,31 @@
+html 
+    head 
+        title 
+        link(rel="stylesheet", href="./output.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    body( class=" bg-yellow-50")
+        nav( class=" flex items-center justify-between  px-4 gap-5 mt-5 font-gloria  text-2xl" )
+            a(href='/')
+                img(src="/images/logo.svg",width="80px", height="80px" alt="food icon")
+            input(type="search",  placeholder="search" class="mt-1 px-3 py-2 bg-yellow-600 border shadow-sm border-slate-300 placeholder-slate-100 focus:outline-none focus:border-yellow-600 focus:ring-yellow-600 block w-full rounded-md sm:text-sm focus:ring-1")
+            ul(class="flex gap-4 justify-end font-bold") 
+                li(class=" hover:text-orange-500 transition-colors ease-in-out duration-300") 
+                    a(href="/",class=" active:text-orange-500 ") Home
+                li(class="hover:text-orange-500 transition-colors ease-in-out duration-300") 
+                    a(href="/about" ) About
+
+                li(class=" hover:text-orange-500 transition-colors ease-in-out duration-300") 
+                    a(href="/blog" ) Blog
+            
+                
+        block content 
+        //- footer(class="w-full flex justify-center py-4 bg-slate-700")
+        //-     p Copyrightt &copy; #{new Date().getFullYear()}
